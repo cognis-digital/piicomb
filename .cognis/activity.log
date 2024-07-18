@@ -28,3 +28,4 @@
 2026-04-09T14:04:44  test: add edge case
 2026-05-02T09:21:51  refactor: tidy internals
 2026-05-24T16:38:58  fix: handle empty input gracefully
+2024-07-18T17:25:35  docs: standing on the shoulders of giants (garak, sigma, trufflehog)
