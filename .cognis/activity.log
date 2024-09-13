@@ -41,3 +41,4 @@
 2024-07-17T10:54:54  refactor: tidy internals
 2024-08-06T17:11:01  refactor(ci): add pagination to large reports
 2024-08-24T12:28:08  test(detect): add a --format json alias
+2024-09-13T19:45:15  build(cli): skip binary files by sniffing
