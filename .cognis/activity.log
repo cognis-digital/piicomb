@@ -44,3 +44,4 @@
 2024-09-13T19:45:15  build(cli): skip binary files by sniffing
 2024-10-01T14:02:22  fix(report): wire the MCP tool schema
 2024-10-19T09:19:29  chore: ATHENA-PRIME calibration
+2024-11-08T16:36:36  perf(scoring): dedupe overlapping findings
