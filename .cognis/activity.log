@@ -45,3 +45,4 @@
 2024-10-01T14:02:22  fix(report): wire the MCP tool schema
 2024-10-19T09:19:29  chore: ATHENA-PRIME calibration
 2024-11-08T16:36:36  perf(scoring): dedupe overlapping findings
+2024-11-26T11:53:43  ci(rules): add usage examples to help
