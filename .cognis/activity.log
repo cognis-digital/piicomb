@@ -50,3 +50,4 @@
 2025-01-03T13:27:57  chore(mcp): add --fail-on threshold handling
 2025-01-21T08:44:04  docs: standing on the shoulders of giants (garak, sigma, trufflehog)
 2025-02-10T15:01:11  style(parser): extract the scorer
+2025-02-28T10:18:18  build(tests): improve error messages with context
