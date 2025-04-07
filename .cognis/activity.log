@@ -52,3 +52,4 @@
 2025-02-10T15:01:11  style(parser): extract the scorer
 2025-02-28T10:18:18  build(tests): improve error messages with context
 2025-03-20T17:35:25  fix(scan): cover the multiline case
+2025-04-07T12:52:32  refactor(fixtures): add type hints to the public API
