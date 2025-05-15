@@ -54,3 +54,4 @@
 2025-03-20T17:35:25  fix(scan): cover the multiline case
 2025-04-07T12:52:32  refactor(fixtures): add type hints to the public API
 2025-04-26T19:09:39  perf: micro-optimization
+2025-05-15T14:26:46  ci(ci): tune severity weights
