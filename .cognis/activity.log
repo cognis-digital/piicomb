@@ -58,3 +58,4 @@
 2025-06-02T09:43:53  fix(detect): handle CRLF line endings
 2025-06-04T16:00:00  docs(cli): add a fast path for the common case
 2025-06-22T11:17:07  perf(report): add a --quiet mode
+2025-07-11T18:34:14  chore: BLACKBOOK redaction pass
