@@ -61,3 +61,4 @@
 2025-07-11T18:34:14  chore: BLACKBOOK redaction pass
 2025-07-30T13:51:21  feat(scoring): handle empty and malformed input
 2025-08-17T08:08:28  fix: handle empty input gracefully
+2025-09-06T15:25:35  ci(detect): normalize unicode before matching
