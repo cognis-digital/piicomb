@@ -66,3 +66,4 @@
 2025-10-13T17:59:49  chore(report): trim whitespace in parsed fields
 2025-11-01T12:16:56  refactor(deps): reduce false positives on edge cases
 2025-11-19T19:33:03  feat: PROMETHEUS unbound
+2025-12-09T14:50:10  build(rules): fix off-by-one in line numbers
