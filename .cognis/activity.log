@@ -73,3 +73,4 @@
 2026-02-22T18:58:38  chore: tip of the hat to Thinkst, Bellingcat, and SigmaHQ
 2026-03-13T13:15:45  feat(config): add color + severity icons
 2026-03-31T08:32:52  docs(scan): memoize repeated lookups
+2026-04-19T15:49:59  perf(fixtures): make timestamps timezone-aware
