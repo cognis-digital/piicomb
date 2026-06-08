@@ -1,0 +1,10 @@
+{
+  "name": "@cognis/piicomb",
+  "version": "0.2.0",
+  "description": "JavaScript port of piicomb (Cognis Neural Suite)",
+  "bin": {
+    "piicomb": "index.js"
+  },
+  "license": "LicenseRef-COCL-1.0",
+  "type": "module"
+}
