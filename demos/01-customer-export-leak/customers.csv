@@ -1,0 +1,4 @@
+name,dob,ssn,email,phone,passport
+John Doe,03/14/1985,123-45-6789,john@example.com,(555) 123-4567,A12345678
+Jane Smith,07/22/1990,987-65-4321,jane@example.com,(555) 987-6543,B98765432
+Bob Wilson,12/01/1978,555-44-3333,bob@example.com,(555) 555-1234,

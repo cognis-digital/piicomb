@@ -1,0 +1,3 @@
+John Doe, DOB 03/14/1985, SSN 123-45-6789, CC 4111 1111 1111 1111
+Email me at john@example.com or call (555) 123-4567
+Passport A12345678, DL B1234567

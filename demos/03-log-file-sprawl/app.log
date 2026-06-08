@@ -1,0 +1,3 @@
+2026-06-08 INFO User logged in: john@example.com from (555) 123-4567
+2026-06-08 INFO Order processed: SSN 123-45-6789 verified
+2026-06-08 ERROR Payment failed: card 4111 1111 1111 1111 declined
