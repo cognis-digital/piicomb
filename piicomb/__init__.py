@@ -1,11 +1,36 @@
-"""
-PIICOMB — Local PII discovery in your own files — SSN/CC/passport/DL
-Part of the Cognis Neural Suite by Cognis Digital.
-https://cognis.digital · MIT License
-"""
-from piicomb.core import scan, TOOL_NAME, TOOL_VERSION
+"""PIICOMB — local PII discovery for your own files.
 
-__version__ = TOOL_VERSION
-__author__ = "Cognis Digital"
-__license__ = "MIT"
-__all__ = ["scan", "TOOL_NAME", "TOOL_VERSION", "__version__"]
+Scans text-bearing files on disk for personally identifiable information
+(SSN, credit cards, passports, driver licenses, emails, phones, dates of
+birth) using regex recognizers plus context-aware validation (Luhn for
+cards, area/group checks for SSNs). Standard library only, zero install.
+
+Spirit of microsoft/presidio, shrunk to a single dependency-free package.
+"""
+
+from .core import (
+    Finding,
+    FileReport,
+    ScanResult,
+    RECOGNIZERS,
+    scan_text,
+    scan_file,
+    scan_path,
+    redact_text,
+)
+
+TOOL_NAME = "piicomb"
+TOOL_VERSION = "1.0.0"
+
+__all__ = [
+    "TOOL_NAME",
+    "TOOL_VERSION",
+    "Finding",
+    "FileReport",
+    "ScanResult",
+    "RECOGNIZERS",
+    "scan_text",
+    "scan_file",
+    "scan_path",
+    "redact_text",
+]

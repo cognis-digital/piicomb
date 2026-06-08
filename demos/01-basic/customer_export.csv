@@ -1,0 +1,6 @@
+id,name,email,phone,ssn,dob,card,notes
+1001,Jane Doe,jane.doe@example.com,(415) 555-0142,536-42-7188,03/14/1987,4111 1111 1111 1111,VIP — flagged for refund
+1002,Carlos Reyes,carlos.reyes@mail.net,212-555-0199,402-88-1235,1990-11-02,5500005555555559,wants paper statements
+1003,Mei Lin,mei.lin@corp.example,+1 503-555-0177,000-12-3456,02/30/1991,1234 5678 9012 3456,DOB looks off
+1004,No PII Here,,,,,,internal placeholder row
+1005,Sam Patel,sam@x.io,800.555.0133,621-09-5512,07/22/1979,378282246310005,Passport No: X12345678; DL number: D4821997
