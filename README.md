@@ -36,7 +36,14 @@ Local PII discovery in your own files — SSN/CC/passport/DL/email/phone/DOB —
 <a name="features"></a>
 ## Features
 
-- ✅ Scan
+- ✅ Luhn Ok
+- ✅ Valid Ssn
+- ✅ Valid Card
+- ✅ Valid Dob
+- ✅ Redact Text
+- ✅ Scan Text
+- ✅ Scan File
+- ✅ Scan Path
 - ✅ Runs on Linux/macOS/Windows · Docker · devcontainer
 - ✅ Ports in Python, JavaScript, Go, and Rust (`ports/`)
 
