@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: piicomb, labels: { app: piicomb } }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: piicomb } }
+  template:
+    metadata: { labels: { app: piicomb } }
+    spec:
+      containers:
+        - name: piicomb
+          image: ghcr.io/cognis-digital/piicomb:latest
+          ports: [{ containerPort: 8000 }]
+          resources:
+            requests: { cpu: "50m", memory: "64Mi" }
+            limits: { cpu: "500m", memory: "256Mi" }
+---
+apiVersion: v1
+kind: Service
+metadata: { name: piicomb }
+spec:
+  selector: { app: piicomb }
+  ports: [{ port: 80, targetPort: 8000 }]
