@@ -1,11 +1,11 @@
 # PIICOMB — Local PII discovery in your own files — SSN/CC/passport/DL/email/phone/DOB
 
 > Part of the **[Cognis Neural Suite](https://github.com/cognis-digital)** by [Cognis Digital](https://cognis.digital)
-> MIT License · domain: `privacy`
+> Cognis Open Collaboration License (COCL) v1.0 · domain: `privacy`
 
 [![PyPI](https://img.shields.io/pypi/v/cognis-piicomb.svg)](https://pypi.org/project/cognis-piicomb/)
 [![CI](https://github.com/cognis-digital/piicomb/actions/workflows/ci.yml/badge.svg)](https://github.com/cognis-digital/piicomb/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: COCL 1.0](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg)](LICENSE)
 
 Local PII discovery in your own files — SSN/CC/passport/DL/email/phone/DOB.
 
@@ -50,7 +50,7 @@ Every Suite tool ships an MCP server, so Cognis.Studio agents can call them as s
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+Source-available under the **Cognis Open Collaboration License (COCL) v1.0** — free for personal, internal-evaluation, research, and educational use; **commercial / production use requires a license** (licensing@cognis.digital). See [LICENSE](LICENSE) and [CONTRIBUTING.md](CONTRIBUTING.md) for the collaboration-pull model.
 
 ## About
 
