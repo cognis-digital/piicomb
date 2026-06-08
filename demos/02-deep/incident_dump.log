@@ -1,0 +1,12 @@
+2026-06-08T09:14:22Z INFO  auth   login ok for user mei.lin@corp.example from client 203.0.113.47
+2026-06-08T09:14:23Z DEBUG net    upstream peer 2001:0db8:85a3:0000:0000:8a2e:0370:7334 hwaddr 3C:5A:B4:0F:1E:2D
+2026-06-08T09:15:01Z WARN  pay    declined card 4111 1111 1111 1111 for account holder Jane Doe
+2026-06-08T09:15:02Z INFO  pay    retry on Amex 378282246310005 succeeded
+2026-06-08T09:16:40Z INFO  kyc    SSN 536-42-7188 verified; DOB 03/14/1987; passport No: X12345678
+2026-06-08T09:16:41Z INFO  kyc    ITIN 912-78-3456 on file; EIN 12-3456789 for employer
+2026-06-08T09:17:10Z INFO  bank   wire to IBAN GB82 WEST 1234 5698 7654 32 queued
+2026-06-08T09:18:55Z ERROR config api_key=sk_live_EXAMPLE_9aZ2bX7qK secret loaded
+2026-06-08T09:19:02Z INFO  crm    contact phone (415) 555-0142 / intl +44 20 7946 0958
+2026-06-08T09:19:03Z INFO  crm    mailing zip 94107-1234 for shipping
+2026-06-08T09:20:00Z DEBUG net    decoy values: ip 999.1.2.3 card 1234 5678 9012 3456 ssn 000-12-3456
+2026-06-08T09:20:01Z INFO  net    serial 12345678 build 20260608 ticket 99887766 (not PII)
