@@ -16,7 +16,7 @@
 </div>
 
 ```bash
-pip install cognis-piicomb
+pip install "git+https://github.com/cognis-digital/piicomb.git"
 piicomb scan .            # → prioritized findings in seconds
 ```
 
@@ -53,7 +53,7 @@ Local PII discovery in your own files — SSN/CC/passport/DL/email/phone/DOB —
 ## Quick start
 
 ```bash
-pip install cognis-piicomb
+pip install "git+https://github.com/cognis-digital/piicomb.git"
 piicomb --version
 piicomb scan .                       # scan current project
 piicomb scan . --format json         # machine-readable
