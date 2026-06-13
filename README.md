@@ -20,6 +20,12 @@ pip install "git+https://github.com/cognis-digital/piicomb.git"
 piicomb scan .            # → prioritized findings in seconds
 ```
 
+<!-- cognis:layman:start -->
+## What is this?
+
+piicomb scans files and folders on your computer for personal information — things like Social Security numbers, credit card numbers, email addresses, phone numbers, and passport numbers — and shows you exactly where they are. You point it at a file or a whole folder and it gives you a list of what it found, so you can decide whether that information should be there or not. It works entirely on your own machine without sending anything to the internet, making it safe to use on sensitive documents. It is useful for anyone who wants to check their files for accidentally stored private data, or for developers who want to make sure their code or logs do not contain real personal information.
+<!-- cognis:layman:end -->
+
 ## Contents
 
 - [Why piicomb?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
@@ -50,6 +56,42 @@ Local PII discovery in your own files — SSN/CC/passport/DL/email/phone/DOB —
 <div align="right"><a href="#top">↑ back to top</a></div>
 
 <a name="quick-start"></a>
+<!-- cognis:install:start -->
+## Install
+
+`piicomb` is source-available (not published to PyPI) — every method below installs
+straight from GitHub. Pick whichever you prefer; the one-line scripts auto-detect
+the best tool available on your machine.
+
+**One-liner (Linux / macOS):**
+```sh
+curl -fsSL https://raw.githubusercontent.com/cognis-digital/piicomb/HEAD/install.sh | sh
+```
+
+**One-liner (Windows PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/cognis-digital/piicomb/HEAD/install.ps1 | iex
+```
+
+**Or install manually — any one of:**
+```sh
+pipx install "git+https://github.com/cognis-digital/piicomb.git"     # isolated (recommended)
+uv tool install "git+https://github.com/cognis-digital/piicomb.git"  # uv
+pip install "git+https://github.com/cognis-digital/piicomb.git"      # pip
+```
+
+**From source:**
+```sh
+git clone https://github.com/cognis-digital/piicomb.git
+cd piicomb && pip install .
+```
+
+Then run:
+```sh
+piicomb --help
+```
+<!-- cognis:install:end -->
+
 ## Quick start
 
 ```bash
