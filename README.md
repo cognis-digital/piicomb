@@ -20,6 +20,42 @@ pip install cognis-piicomb
 piicomb scan .            # → prioritized findings in seconds
 ```
 
+## Usage — step by step
+
+1. Install the CLI (Python 3.9+):
+
+   ```bash
+   pip install git+https://github.com/cognis-digital/piicomb.git
+   ```
+
+2. List the bundled recognizers so you know which labels you can target:
+
+   ```bash
+   piicomb recognizers
+   ```
+
+3. Scan a file or directory for PII:
+
+   ```bash
+   piicomb scan ./data
+   ```
+
+4. Narrow recognizers / confidence and emit JSON, or print a masked copy:
+
+   ```bash
+   piicomb scan ./data --only EMAIL,IPV4 --min-score 0.6 --format json
+   piicomb redact notes.txt
+   ```
+
+5. Gate CI on any discovered PII:
+
+   ```yaml
+   - name: pii comb
+     run: |
+       pip install git+https://github.com/cognis-digital/piicomb.git
+       piicomb scan . --fail-on-find
+   ```
+
 ## Contents
 
 - [Why piicomb?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
