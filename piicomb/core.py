@@ -19,6 +19,7 @@ Standard library only. Zero install. Spirit of microsoft/presidio.
 
 from __future__ import annotations
 
+import datetime
 import math
 import os
 import re
@@ -107,7 +108,8 @@ def valid_dob(match: str) -> bool:
         year, month, day = nums
     else:
         month, day, year = nums
-    if not (1900 <= year <= 2025):
+    current_year = datetime.date.today().year
+    if not (1900 <= year <= current_year):
         return False
     if not (1 <= month <= 12):
         return False
@@ -569,7 +571,11 @@ def _iter_files(root: str, recursive: bool) -> Iterator[str]:
         yield root
         return
     if not recursive:
-        for name in sorted(os.listdir(root)):
+        try:
+            names = sorted(os.listdir(root))
+        except PermissionError as exc:
+            raise PermissionError(f"cannot list directory: {exc}") from exc
+        for name in names:
             full = os.path.join(root, name)
             if os.path.isfile(full):
                 yield full

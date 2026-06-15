@@ -95,6 +95,8 @@ def _parse_only(value: Optional[str]) -> Optional[list[str]]:
     if not value:
         return None
     labels = [s.strip().upper() for s in value.split(",") if s.strip()]
+    if not labels:
+        raise ValueError("--only value produced no valid labels after parsing; got: " + repr(value))
     valid = set(recognizer_labels())
     bad = [lbl for lbl in labels if lbl not in valid]
     if bad:
@@ -155,6 +157,14 @@ def _cmd_recognizers(fmt: str) -> int:
 
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
+    try:
+        return _main_inner(argv)
+    except Exception as exc:  # pragma: no cover
+        print(f"error: unexpected failure: {exc}", file=sys.stderr)
+        return 2
+
+
+def _main_inner(argv: Optional[Sequence[str]] = None) -> int:
     parser = _build_parser()
     args = parser.parse_args(argv)
 
@@ -201,6 +211,9 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         )
     except FileNotFoundError:
         print(f"error: no such file or directory: {args.path}", file=sys.stderr)
+        return 1
+    except PermissionError as exc:
+        print(f"error: permission denied: {exc}", file=sys.stderr)
         return 1
 
     if args.format == "json":
