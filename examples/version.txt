@@ -1,0 +1,3 @@
+$ piicomb-emit --version
+
+piicomb 2.0.0

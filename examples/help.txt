@@ -1,0 +1,17 @@
+$ piicomb-emit --help
+
+usage: piicomb [-h] [--version] {scan,redact,recognizers} ...
+
+Local PII discovery for your own files: SSN/ITIN/EIN, credit cards (Luhn),
+IBAN (mod-97), passport, driver license, email, phone, IPv4/IPv6/MAC, DOB,
+ZIP+4, and high-entropy API secrets, with context-word confidence boosting.
+
+positional arguments:
+  {scan,redact,recognizers}
+    scan                discover PII in a path
+    redact              print a file with PII masked
+    recognizers         list bundled recognizers
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
